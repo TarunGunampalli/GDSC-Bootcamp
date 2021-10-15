@@ -2,17 +2,17 @@
 
 Command Line
 !! Figure out what to teach windows people
-WSL
-Basic Linux Commands
-pwd
-ls
-cd
-ssh
-What is WSL
-Using a command
-Flags
-Command line arguments
-Installing other command line interfaces (like git)
+WSL \
+Basic Linux Commands \
+pwd \
+ls \
+cd \
+ssh \
+What is WSL \
+Using a command \
+Flags \
+Command line arguments \
+Installing other command line interfaces (like git) \
 
 Git 
 What is Git?
