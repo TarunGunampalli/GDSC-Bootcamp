@@ -118,9 +118,6 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=https%3A//
   - More on this in the live demo
 
 
-
-
-
 Virtual Environments 
 Generally used for Python
 Conda and venv
@@ -128,6 +125,31 @@ How to install
 How to create a virtual environment
 How to install packages in it
 How to deactivate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 VSCode
