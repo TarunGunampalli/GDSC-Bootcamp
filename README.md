@@ -1,14 +1,14 @@
 # GDSC Developer Basics Bootcamp
 
 ## Command Line
-Basic Linux Commands \
-  - pwd \
-  - ls \
-  - cd \
-  - ssh \
-Flags \
+Basic Linux Commands
+  - pwd
+  - ls
+  - cd
+  - ssh
+Flags
 Installing other command line interfaces (like git)
-What is WSL? \
+What is WSL?
 
 Git 
 What is Git?
