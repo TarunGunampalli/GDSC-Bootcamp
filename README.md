@@ -1,7 +1,6 @@
 # GDSC Developer Basics Bootcamp
 
-Command Line
-!! Figure out what to teach windows people
+## Command Line
 WSL \
 Basic Linux Commands \
 pwd \
@@ -12,7 +11,7 @@ What is WSL \
 Using a command \
 Flags \
 Command line arguments \
-Installing other command line interfaces (like git) \
+Installing other command line interfaces (like git)
 
 Git 
 What is Git?
