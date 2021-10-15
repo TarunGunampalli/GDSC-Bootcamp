@@ -6,6 +6,7 @@ Basic Linux Commands
   - ls
   - cd
   - ssh
+
 Flags\
 Installing other command line interfaces (like git)\
 What is WSL?
