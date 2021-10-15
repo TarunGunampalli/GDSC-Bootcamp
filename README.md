@@ -1,4 +1,4 @@
-# GDSC-Bootcamp
+# GDSC Developer Basics Bootcamp
 
 Command Line
 !! Figure out what to teach windows people
