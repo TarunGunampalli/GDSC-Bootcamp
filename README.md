@@ -118,38 +118,42 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=https%3A//
   - More on this in the live demo
 
 
-Virtual Environments 
-Generally used for Python
-Conda and venv
-How to install
-How to create a virtual environment
-How to install packages in it
-How to deactivate
+## Virtual Environments 
 
+#### What is a Virtual Environment?
+-  A virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system
 
+#### Conda
+- There are multiple different ways to create and activate virtual environments, but today we will use Conda since it's very easy to manage
 
+#### Installing Conda
+- 
 
+#### Creating and Activating a Virtual Environment
+- To create and activate a new virtual environment, run the following commands:
+```
+conda create -n <environment_name> python=3.8
+conda activate <environment_name>
+```
 
+#### Installing Packages in a Virtual Environment
+- Once a Conda Virtual Envrionment is active, it's name will show up in parentheses to the very left of the command prompt. In order to install dependencies in it, simply run the following:
+```
+pip install <package_name>
+```  
+- You can also install multiple packages at once by simply listing the names in a file called requirements.txt and running the following:
+```
+pip install -r requirements.txt
+```
 
+#### Deactivating Virtual Enviroments
+- To deactivate or exit out of a Virtual Environment, run the following:
+```
+conda deactivate <environment_name>
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Summary of Virtual Environments
+- When working on a Python project, you should always use a Virtual Environment for your directory so that you can install specific dependencies only for projects that need them and not globally on your machine
 
 
 VSCode
