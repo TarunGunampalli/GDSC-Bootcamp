@@ -19,7 +19,12 @@
 - A command with an argument might be "go buy 2 gallons of milk"
 
 #### What is WSL?
-- 
+- Windows Subsystem for Linux
+- WSL is a linux system that you can access from within Windows, without dual booting or using a virtual machine.
+- WSL is very useful for developers on Windows since many tutorials/instructions are given in linux commands, most of which don't work on Windows. Using linux in conjuction with your Windows filesystem is very useful.
+- Things to know
+    - You can access your windows filesystem by running ```cd /mnt/c``` . This takes you to your Windows C: drive.
+    - Packages on WSL and in Windows are completely separate from each other.For example, if you install python on WSL, you'll only be able to run python programs with the ```python``` command from within WSL, and similarly if you install it on Windows instead. Pick either WSL or Windows for packages now and make sure to stick with it. 
 
 ## Git and GitHub
 #### What is Git?
@@ -156,27 +161,44 @@ conda deactivate <environment_name>
 - When working on a Python project, you should always use a Virtual Environment for your directory so that you can install specific dependencies only for projects that need them and not globally on your machine
 
 
-VSCode
-Difference between a code editor and an IDE
-Parts of the window
-SideBar
-File explorer
-Source control
-Extensions
-Bottom Window
-Terminal
-Debug Console
-Command Palette
-Keyboard shortcuts
-Ctrl + space for intellisense
-copy/move commands
-Debugging
-Why use vscode debugger?
-GUI makes it easier to use
-Can automate multiple tasks
-launch.json
-tasks.json
+## VSCode and other IDEs
+- Code/text editors vs IDEs
+    - VSCode is a text editor. When you install it, you won't be able to run programs from VSCode or get features like debugging. At its most basic form, it's basically a glorified notepad.
+    - IDE stands for Integrated Development Environment. They come with everything you need for developing in a specific language.
+        - For example, IntelliJ is an IDE for Java. It will come with a package manager for importing external Java classes, a debugger that can trace through your code and provide useful information on what's going on as your code runs, and Intellisense, a useful autocomplete feature that helps you write code faster.
+    - Pros and Cons
+        - VSCode seems useless, but with the use of extensions you can work in basically every feature that a full IDE like IntelliJ would give you. This includes Intellisense, a debugger, and many other useful features.
+        - VSCode is also versatile. IntelliJ is only for Java, and there's other IDEs for other languages, but VSCode can be used for any popular language today with community or professionally maintained extensions.
+        - IDEs are often faster than VSCode because everything is natively built-in.
 
-IDE
-IntelliJ/Eclipse for Java
 
+- Parts of the window
+    - SideBar
+      - File explorer
+          - Used to browse through files in your project folder.
+          - You can search through your files by using ```Ctrl + P``` or by clicking into the file explorer window and typing.
+      - Global Search
+          - Searches through every file in your project folder
+      - Source control
+          - GUI that's very useful for using git/github without having to memorize a ton of commands.
+          - Using an extensions like Gitlens, VSCode source control allows you to see previous commits, branches, and histories in easy to read GUIs compared to git on the command line.
+      - Extensions
+          - Extend the versatility of VSCode by adding in a ton of useful features.
+          - Popular useful extensions:
+              - Language Extension Packs (Java, C/C++, Python): Add IDE-like features for each language into VSCode
+              - Gitlens: Provides way more information about git/github commits, branches, and histories.
+                  - Fun Fact: Gitlens is the most downloaded extension on VSCode.
+              - Live Share: A live collaboration tool for working on the same codebase simultaneously.
+    - Bottom Window
+    - Terminal
+    - Debug Console
+    - Command Palette
+    - Keyboard shortcuts
+    - Ctrl + space for intellisense
+    - copy/move commands
+    - Debugging
+    - Why use vscode debugger?
+    - GUI makes it easier to use
+    - Can automate multiple tasks
+    - launch.json
+    - tasks.json
