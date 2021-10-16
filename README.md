@@ -161,19 +161,21 @@ conda deactivate <environment_name>
 - When working on a Python project, you should always use a Virtual Environment for your directory so that you can install specific dependencies only for projects that need them and not globally on your machine
 
 
-## VSCode and other IDEs
-- Code/text editors vs IDEs
-    - VSCode is a text editor. When you install it, you won't be able to run programs from VSCode or get features like debugging. At its most basic form, it's basically a glorified notepad.
-    - IDE stands for Integrated Development Environment. They come with everything you need for developing in a specific language.
+## Code Editors and IDEs
+- Code Editors vs IDEs
+    - Code editors like Visual Studio Code and Atom are text editors at the core. When you install one, you won't be able to run programs directly or get specific features like debugging out of the box. In their most basic form, they are just glorified notepads.
+    - IDE stands for Integrated Development Environment. They come with everything you need for developing using a specific language.
         - For example, IntelliJ is an IDE for Java. It will come with a package manager for importing external Java classes, a debugger that can trace through your code and provide useful information on what's going on as your code runs, and Intellisense, a useful autocomplete feature that helps you write code faster.
     - Pros and Cons
-        - VSCode seems useless, but with the use of extensions you can work in basically every feature that a full IDE like IntelliJ would give you. This includes Intellisense, a debugger, and many other useful features.
-        - VSCode is also versatile. IntelliJ is only for Java, and there's other IDEs for other languages, but VSCode can be used for any popular language today with community or professionally maintained extensions.
+        - VSCode may seem ineffecient, but with the use of extensions you can work in basically every feature that a full IDE like IntelliJ would give you. This includes Intellisense, a debugger, and many other useful features.
+        - VSCode is more versatile. IntelliJ is only for Java, and there's other IDEs for other languages, but VSCode can be used for any popular language today with community or professionally maintained extensions.
         - IDEs are often faster than VSCode because everything is natively built-in.
+        - Good code editors like VS Code have features where you can pull up a terminal below your code window, making it easy to run your code with simple commands
 
+<br>
 
 - Parts of the window
-    - SideBar
+    - Sidebar
       - File explorer
           - Used to browse through files in your project folder.
           - You can search through your files by using ```Ctrl + P``` or by clicking into the file explorer window and typing.
