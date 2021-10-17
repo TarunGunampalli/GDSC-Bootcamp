@@ -174,7 +174,7 @@ conda deactivate <environment_name>
 
 <br>
 
-- Parts of the window
+- Parts of VSCode
     - Sidebar
       - File explorer
           - Used to browse through files in your project folder.
@@ -192,9 +192,22 @@ conda deactivate <environment_name>
                   - Fun Fact: Gitlens is the most downloaded extension on VSCode.
               - Live Share: A live collaboration tool for working on the same codebase simultaneously.
     - Bottom Window
-    - Terminal
-    - Debug Console
+        - Shortcut to open and close: ```Ctrl + ` ```
+        - Terminal
+            - A normal command line that's integrated into VSCode
+        - Debug Console
+            - Debugging in VSCode is a little advanced, but the console is how you interface with the debugger, allowing you to do things like print the values of variables, see stack traces, and use any other features that traditional debuggers have.
     - Command Palette
+        - The source for any command that VSCode has, built in or from extensions
+        - Open it with ```Ctrl + Shift + P```
+        - Commonly used commands automatically appear at the top
+        - Start typing to search for specific commands
+
+<br>
+<br>
+<br>
+
+    - ADVANCED TOPICS (Might take too long)
     - Keyboard shortcuts
     - Ctrl + space for intellisense
     - copy/move commands
