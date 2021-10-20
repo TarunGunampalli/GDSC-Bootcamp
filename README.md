@@ -31,7 +31,7 @@
 - Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development
 
 #### What is GitHub?
-- GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
+- GitHub is a provider of Internet hosting for software development and version control using git. It offers the distributed version control and source code management functionality of git, plus its own features.
 
 #### How Git and GitHub are interrelated
 - Git is a command line tool that is used to manage code versions across a user and GitHub is the medium that allows multiple individual users to sync all of their changes with each other
@@ -132,7 +132,8 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=https%3A//
 - There are multiple different ways to create and activate virtual environments, but today we will use Conda since it's very easy to manage
 
 #### Installing Conda
-- 
+- https://docs.conda.io/en/latest/miniconda.html
+- You don't have to do this right now if you don't want to since the installation can be a little tricky depending on your machine
 
 #### Creating and Activating a Virtual Environment
 - To create and activate a new virtual environment, run the following commands:
@@ -167,14 +168,14 @@ conda deactivate <environment_name>
     - IDE stands for Integrated Development Environment. They come with everything you need for developing using a specific language.
         - For example, IntelliJ is an IDE for Java. It will come with a package manager for importing external Java classes, a debugger that can trace through your code and provide useful information on what's going on as your code runs, and Intellisense, a useful autocomplete feature that helps you write code faster.
     - Pros and Cons
-        - VSCode may seem ineffecient, but with the use of extensions you can work in basically every feature that a full IDE like IntelliJ would give you. This includes Intellisense, a debugger, and many other useful features.
-        - VSCode is more versatile. IntelliJ is only for Java, and there's other IDEs for other languages, but VSCode can be used for any popular language today with community or professionally maintained extensions.
-        - IDEs are often faster than VSCode because everything is natively built-in.
+        - VS Code may seem ineffecient, but with the use of extensions you can work in basically every feature that a full IDE like IntelliJ would give you. This includes Intellisense, a debugger, and many other useful features.
+        - VS Code is more versatile. IntelliJ is only for Java, and there's other IDEs for other languages, but VS Code can be used for any popular language today with community or professionally maintained extensions.
+        - IDEs are often faster than VS Code because everything is natively built-in.
         - Good code editors like VS Code have features where you can pull up a terminal below your code window, making it easy to run your code with simple commands
 
 <br>
 
-- Parts of VSCode
+- Parts of VS Code
     - Sidebar
       - File explorer
           - Used to browse through files in your project folder.
@@ -183,9 +184,9 @@ conda deactivate <environment_name>
           - Searches through every file in your project folder
       - Source control
           - GUI that's very useful for using git/github without having to memorize a ton of commands.
-          - Using an extensions like Gitlens, VSCode source control allows you to see previous commits, branches, and histories in easy to read GUIs compared to git on the command line.
+          - Using an extensions like Gitlens, VS Code source control allows you to see previous commits, branches, and histories in easy to read GUIs compared to git on the command line.
       - Extensions
-          - Extend the versatility of VSCode by adding in a ton of useful features.
+          - Extend the versatility of VS Code by adding in a ton of useful features.
           - Popular useful extensions:
               - Language Extension Packs (Java, C/C++, Python): Add IDE-like features for each language into VSCode
               - Gitlens: Provides way more information about git/github commits, branches, and histories.
@@ -194,26 +195,17 @@ conda deactivate <environment_name>
     - Bottom Window
         - Shortcut to open and close: ```Ctrl + ` ```
         - Terminal
-            - A normal command line that's integrated into VSCode
+            - A normal command line that's integrated into VS Code
         - Debug Console
-            - Debugging in VSCode is a little advanced, but the console is how you interface with the debugger, allowing you to do things like print the values of variables, see stack traces, and use any other features that traditional debuggers have.
+            - Debugging in VS Code is a little advanced, but the console is how you interface with the debugger, allowing you to do things like print the values of variables, see stack traces, and use any other features that traditional debuggers have.
     - Command Palette
-        - The source for any command that VSCode has, built in or from extensions
+        - The source for any command that VS Code has, built in or from extensions
         - Open it with ```Ctrl + Shift + P```
         - Commonly used commands automatically appear at the top
         - Start typing to search for specific commands
 
-<br>
-<br>
-<br>
-
-    - ADVANCED TOPICS (Might take too long)
-    - Keyboard shortcuts
-    - Ctrl + space for intellisense
-    - copy/move commands
-    - Debugging
-    - Why use vscode debugger?
-    - GUI makes it easier to use
-    - Can automate multiple tasks
-    - launch.json
-    - tasks.json
+- Eclipse
+  - Eclipse is an IDE, or Integrated Development Environment catered to Java developers. In a nutshell, IDEs share many characteristics with code editors, but go one step further and provides more comprehensive facilities to software developers, such as the ability to run your code with the click of a button, more powerful debugging capabilities, and live unit testing for those working a professional Software Engineering job.
+  - For our purposes, I will simply demo how to use Eclipse. The installation and setup requires a bit of work as well as downloading a Java Runtime Environment and possibly also a Java Development Kit.
+    - If you would like to try out Eclipse for yourself in your computer, you can follow the tutorials at this link:
+    http://eclipsetutorial.sourceforge.net/
