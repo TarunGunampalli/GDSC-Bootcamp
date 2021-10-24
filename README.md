@@ -100,9 +100,14 @@ Eclipse
 - GitHub is an actual website and therefore provides visual feedback on all code changes, making it easy to see the version history of files, the exact changes made with every code update, and easy resolution when there are conflicts in the changes made (more on this shortly)
 
 #### Installation
-- For Mac/Linux, git comes pre-installed with your machine!
+- For Mac/Linux, git should come pre-installed with your machine!
 - For Windows, git can be downloaded by going to:\
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=https%3A//git-scm.com/download/win
+https://git-scm.com/download/win
+- Run the following in your command line to verify installation:
+```
+git --version
+```
+- If you have a Mac and this is your first time extensively using your terminal, you might be prompted to install command line developer tools. If this is the case, click install and everything needed to use git should be taken care of automatically
 
 #### Creating a Repository
 - For our demo today, please follow these steps:
