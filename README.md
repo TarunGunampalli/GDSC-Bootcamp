@@ -110,17 +110,20 @@ git --version
 - If you have a Mac and this is your first time extensively using your terminal, you might be prompted to install command line developer tools. If this is the case, click install and everything needed to use git should be taken care of automatically
 
 #### Creating a Repository
-- For our demo today, please follow these steps:
-    - Go to this repository: https://github.com/TarunGunampalli/GDSC-Bootcamp
-    - Quickly create a GitHub account if you don't have one
+- For our demo today we will work in pairs of 2. Please follow these steps:
+    - Make sure both partners create a GitHub account if one or both don't have one
+    - Have ONE person go to this repository: https://github.com/TarunGunampalli/GDSC-Bootcamp
     - In the top right of the screen, click "Fork"
         - This creates a copy of the codebase that you now are the owner of (like making a copy in Google Drive)
-    - Go to the forked repository that you now own and click the green button that says "Code". Copy the URL that is displayed
-    - Open your command line, use the cd command to navigate to your desired directory, and run the following command:
+    - Go to the forked repository that you now own
+        - Click the settings tab, click on manage access, click add people, and type in their GitHub username to send them an invite
+        - The other partner should check their email for an invitation and accept access
+        - Now both partners should click the green button that says "Code" and copy the URL that is displayed
+    - Both partners should open their command line, use the cd command to navigate to a desired directory, and run the following command:
     ``` 
     git clone <paste the copied url here>
     ```
-    - Now you have the codebase on your machine and can start editing. Since you cloned it off of GitHub, it is already synchronized and ready to go
+    - Enter in your username and password as prompted. Now you have the codebase on your machine and can start editing. Since you cloned it off of GitHub, it is already synchronized and ready to go
 - This can also be done the other way around. You can create a new directory on your computer, run the command ```git init```, go to your GitHub profile online, create a brand new repository, and follow the instructions to connect it with your locally initialized git directory.
 
 #### How Does Git Work?
