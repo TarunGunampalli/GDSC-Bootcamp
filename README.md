@@ -31,11 +31,11 @@
 
 #### What is WSL?
 - Windows Subsystem for Linux
-- WSL is a linux system that you can access from within Windows, without dual booting or using a virtual machine.
-- WSL is very useful for developers on Windows since many tutorials/instructions are given in linux commands, most of which don't work on Windows. Using linux in conjuction with your Windows filesystem is very useful.
+- WSL is a Linux terminal that you can use from within Windows, without dual booting or using a virtual machine.
+- WSL is very useful for developers on Windows since many tutorials/instructions are given in Linux commands, most of which don't work on Windows. Using Linux commands to interface with your Windows filesystem is very useful.
 - Things to know
     - You can access your windows filesystem by running ```cd /mnt/c``` . This takes you to your Windows C: drive.
-    - Packages on WSL and in Windows are completely separate from each other.For example, if you install python on WSL, you'll only be able to run python programs with the ```python``` command from within WSL, and similarly if you install it on Windows instead. Pick either WSL or Windows for packages now and make sure to stick with it. 
+    - Packages in WSL are completely separate from your Windows machine. For example, if you install python on WSL, you'll only be able to run python programs with the ```python``` command from within WSL and not from your default command line, and similarly if you install it on Windows instead. Pick either WSL or Windows for packages now and make sure to stick with it. 
 
 <br>
 
