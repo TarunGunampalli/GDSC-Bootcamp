@@ -26,7 +26,57 @@
     - You can access your windows filesystem by running ```cd /mnt/c``` . This takes you to your Windows C: drive.
     - Packages on WSL and in Windows are completely separate from each other.For example, if you install python on WSL, you'll only be able to run python programs with the ```python``` command from within WSL, and similarly if you install it on Windows instead. Pick either WSL or Windows for packages now and make sure to stick with it. 
 
+<br>
+
+## Code Editors and IDEs
+Code Editors vs IDEs
+- Code editors like Visual Studio Code and Atom are text editors at the core. When you install one, you won't be able to run programs directly or get specific features like debugging out of the box. In their most basic form, they are just glorified notepads.
+- IDE stands for Integrated Development Environment. They come with everything you need for developing using a specific language.
+    - For example, Eclipse is an IDE for Java. It will come with a package manager for importing external Java classes, a debugger that can trace through your code and provide useful information on what's going on as your code runs, and Intellisense, a useful autocomplete feature that helps you write code faster.
+- Pros and Cons
+    - VS Code may seem ineffecient, but with the use of extensions you can work in basically every feature that a full IDE like IntelliJ would give you. This includes Intellisense, a debugger, and many other useful features.
+    - VS Code is more versatile. IntelliJ is only for Java, and there's other IDEs for other languages, but VS Code can be used for any popular language today with community or professionally maintained extensions.
+    - IDEs are often faster than VS Code because everything is natively built-in.
+    - Good code editors like VS Code have features where you can pull up a terminal below your code window, making it easy to run your code with simple commands
+
+Parts of VS Code
+- Sidebar
+- File explorer
+    - Used to browse through files in your project folder.
+    - You can search through your files by using ```Ctrl + P``` or by clicking into the file explorer window and typing.
+    - Global Search
+        - Searches through every file in your project folder
+    - Source control
+        - GUI that's very useful for using git/github without having to memorize a ton of commands.
+        - Using an extensions like Gitlens, VS Code source control allows you to see previous commits, branches, and histories in easy to read GUIs compared to git on the command line.
+    - Extensions
+        - Extend the versatility of VS Code by adding in a ton of useful features.
+        - Popular useful extensions:
+            - Language Extension Packs (Java, C/C++, Python): Add IDE-like features for each language into VSCode
+            - Gitlens: Provides way more information about git/github commits, branches, and histories.
+                - Fun Fact: Gitlens is the most downloaded extension on VSCode.
+            - Live Share: A live collaboration tool for working on the same codebase simultaneously.
+- Bottom Window
+    - Shortcut to open and close: ```Ctrl + ` ```
+    - Terminal
+        - A normal command line that's integrated into VS Code
+    - Debug Console
+        - Debugging in VS Code is a little advanced, but the console is how you interface with the debugger, allowing you to do things like print the values of variables, see stack traces, and use any other features that traditional debuggers have.
+- Command Palette
+    - The source for any command that VS Code has, built in or from extensions
+    - Open it with ```Ctrl + Shift + P```
+    - Commonly used commands automatically appear at the top
+    - Start typing to search for specific commands
+
+Eclipse
+- Eclipse is an IDE, or Integrated Development Environment catered to Java developers. In a nutshell, IDEs share many characteristics with code editors, but go one step further and provides more comprehensive facilities to software developers, such as the ability to run your code with the click of a button, more powerful debugging capabilities, and live unit testing for those working a professional Software Engineering job.
+- For our purposes, we will simply demo how to use Eclipse. The installation and setup requires a bit of work as well as downloading a Java Runtime Environment and possibly also a Java Development Kit.
+- If you would like to try out Eclipse for yourself in your computer, you can follow the tutorials at this link: http://eclipsetutorial.sourceforge.net/
+
+<br>
+
 ## Git and GitHub
+
 #### What is Git?
 - Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development
 
@@ -46,7 +96,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=https%3A//
 - For our demo today, please follow these steps:
     - Go to this repository: https://github.com/TarunGunampalli/GDSC-Bootcamp
     - In the top right of the screen, click "Fork"
-       - This creates a copy of the codebase that you now are the owner of (like making a copy in Google Drive)
+        - This creates a copy of the codebase that you now are the owner of (like making a copy in Google Drive)
     - Go to the forked repository that you now own and click the green button that says "Code". Copy the URL that is displayed
     - Open your command line, use the cd command to navigate to your desired directory, and run the following command:
     ``` 
@@ -60,68 +110,69 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=https%3A//
 
 #### Basic commands
 - ```git add```
-  - Specifies which modified files to include in a new code change
-  - Can add individual files by specifying them as an argument
-  - Can add all modified files in or below the directory you are currently in by saying ```git add .```
+    - Specifies which modified files to include in a new code change
+    - Can add individual files by specifying them as an argument
+    - Can add all modified files in or below the directory you are currently in by saying ```git add .```
 
 <br>
 
 - ```git commit```
-  - Must perform add before running this command
-  - Takes all the modified files specified in the add command and saves them as a single "change"
-  - The great thing about commits is that they are all logged both locally and on GitHub after they are pushed, making it easy to revert back to previous versions of code in case something breaks as a result of a code change
-  - Should be run as ```git commit -m <commit message>``` with the commit message specifying what the code change entailed
-    - For example, the message could be "changed output of the process_text function"
+    - Must perform add before running this command
+    - Takes all the modified files specified in the add command and saves them as a single "change"
+    - The great thing about commits is that they are all logged both locally and on GitHub after they are pushed, making it easy to revert back to previous versions of code in case something breaks as a result of a code change
+    - Should be run as ```git commit -m <commit message>``` with the commit message specifying what the code change entailed
+        - For example, the message could be "changed output of the process_text function"
 
 <br>
 
 - ```git push```
-  - Must perform add and commit in that order before running this command
-  - Push takes all the latest local changes and applies them to the remote repository on GitHub
+    - Must perform add and commit in that order before running this command
+    - Push takes all the latest local changes and applies them to the remote repository on GitHub
 
 <br>
 
 - ```git pull```
-  - If the remote repository on GitHub has new changes that are not reflected on your local directory, this command will bring in those changes
+    - If the remote repository on GitHub has new changes that are not reflected on your local directory, this command will bring in those changes
 
 <br>
 
 - ```git restore```
-  - This will discard all local changes in between commits
+    - This will discard all local changes in between commits
 
 <br>
 
 - ```git log```
-   - This will print out your entire commit history
+    - This will print out your entire commit history
 
 <br>
 
 - ```git status```
-  - This will show you what files have been modified, deleted, created, etc. between commits
-  - It will also show you what differs between your local code and the remote repository on GitHub
+    - This will show you what files have been modified, deleted, created, etc. between commits
+    - It will also show you what differs between your local code and the remote repository on GitHub
 
 <br>
 
 - ```git branch```
-  - This will create a new "branch" in your local directory
-  - A branch is essentially a copy of the codebase within the same directory and repository. Branching allows multiple collaborators to work on different copies of the files rather than all working on the same ones. Branches can be easily merged back into one "main" branch. As a whole, it minimizes the chances of "merge conflicts" when multiple people are editing the codebase. We will talk more about this in the live demo.
-  - ```git branch``` by itself will just list all your branches
-  - Run ```git branch -b <branch-name>``` to create a new branch and name it
+    - This will create a new "branch" in your local directory
+    - A branch is essentially a copy of the codebase within the same directory and repository. Branching allows multiple collaborators to work on different copies of the files rather than all working on the same ones. Branches can be easily merged back into one "main" branch. As a whole, it minimizes the chances of "merge conflicts" when multiple people are editing the codebase. We will talk more about this in the live demo.
+    - ```git branch``` by itself will just list all your branches
+    - Run ```git branch -b <branch-name>``` to create a new branch and name it
 
 <br>
 
 - ```git checkout```
-  - This allows you to switch from one branch to another
-  - Must run ```git checkout <branch-name>``` to specify what branch to switch to
-  - As a shortcut, you can simply run ```git checkout -b <branch-name>``` to create a new branch and switch to it all at once
+    - This allows you to switch from one branch to another
+    - Must run ```git checkout <branch-name>``` to specify what branch to switch to
+    - As a shortcut, you can simply run ```git checkout -b <branch-name>``` to create a new branch and switch to it all at once
 
 <br>
 
-- Pull Requests and Merging
-  - After you are done working on a branch, you can create a pull request, in which a request will be made to merge the changes in that branch to the main branch. This process is done so that your collaborators can perform a "code review" and make sure all the changes look good before bringing them into the main code
-  - In the industry, this is an important practice because the main branch is typically set up with automated testing and deployment configurations, so developers should NEVER push code changes directly to the main or risk breaking entire applications
-  - More on this in the live demo
+Pull Requests and Merging
+- After you are done working on a branch, you can create a pull request, in which a request will be made to merge the changes in that branch to the main branch. This process is done so that your collaborators can perform a "code review" and make sure all the changes look good before bringing them into the main code
+- In the industry, this is an important practice because the main branch is typically set up with automated testing and deployment configurations, so developers should NEVER push code changes directly to the main or risk breaking entire applications
+- More on this in the live demo
 
+<br>
 
 ## Virtual Environments 
 
@@ -160,52 +211,3 @@ conda deactivate <environment_name>
 
 #### Summary of Virtual Environments
 - When working on a Python project, you should always use a Virtual Environment for your directory so that you can install specific dependencies only for projects that need them and not globally on your machine
-
-
-## Code Editors and IDEs
-- Code Editors vs IDEs
-    - Code editors like Visual Studio Code and Atom are text editors at the core. When you install one, you won't be able to run programs directly or get specific features like debugging out of the box. In their most basic form, they are just glorified notepads.
-    - IDE stands for Integrated Development Environment. They come with everything you need for developing using a specific language.
-        - For example, IntelliJ is an IDE for Java. It will come with a package manager for importing external Java classes, a debugger that can trace through your code and provide useful information on what's going on as your code runs, and Intellisense, a useful autocomplete feature that helps you write code faster.
-    - Pros and Cons
-        - VS Code may seem ineffecient, but with the use of extensions you can work in basically every feature that a full IDE like IntelliJ would give you. This includes Intellisense, a debugger, and many other useful features.
-        - VS Code is more versatile. IntelliJ is only for Java, and there's other IDEs for other languages, but VS Code can be used for any popular language today with community or professionally maintained extensions.
-        - IDEs are often faster than VS Code because everything is natively built-in.
-        - Good code editors like VS Code have features where you can pull up a terminal below your code window, making it easy to run your code with simple commands
-
-<br>
-
-- Parts of VS Code
-    - Sidebar
-      - File explorer
-          - Used to browse through files in your project folder.
-          - You can search through your files by using ```Ctrl + P``` or by clicking into the file explorer window and typing.
-      - Global Search
-          - Searches through every file in your project folder
-      - Source control
-          - GUI that's very useful for using git/github without having to memorize a ton of commands.
-          - Using an extensions like Gitlens, VS Code source control allows you to see previous commits, branches, and histories in easy to read GUIs compared to git on the command line.
-      - Extensions
-          - Extend the versatility of VS Code by adding in a ton of useful features.
-          - Popular useful extensions:
-              - Language Extension Packs (Java, C/C++, Python): Add IDE-like features for each language into VSCode
-              - Gitlens: Provides way more information about git/github commits, branches, and histories.
-                  - Fun Fact: Gitlens is the most downloaded extension on VSCode.
-              - Live Share: A live collaboration tool for working on the same codebase simultaneously.
-    - Bottom Window
-        - Shortcut to open and close: ```Ctrl + ` ```
-        - Terminal
-            - A normal command line that's integrated into VS Code
-        - Debug Console
-            - Debugging in VS Code is a little advanced, but the console is how you interface with the debugger, allowing you to do things like print the values of variables, see stack traces, and use any other features that traditional debuggers have.
-    - Command Palette
-        - The source for any command that VS Code has, built in or from extensions
-        - Open it with ```Ctrl + Shift + P```
-        - Commonly used commands automatically appear at the top
-        - Start typing to search for specific commands
-
-- Eclipse
-  - Eclipse is an IDE, or Integrated Development Environment catered to Java developers. In a nutshell, IDEs share many characteristics with code editors, but go one step further and provides more comprehensive facilities to software developers, such as the ability to run your code with the click of a button, more powerful debugging capabilities, and live unit testing for those working a professional Software Engineering job.
-  - For our purposes, I will simply demo how to use Eclipse. The installation and setup requires a bit of work as well as downloading a Java Runtime Environment and possibly also a Java Development Kit.
-    - If you would like to try out Eclipse for yourself in your computer, you can follow the tutorials at this link:
-    http://eclipsetutorial.sourceforge.net/
