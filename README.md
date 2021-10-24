@@ -28,6 +28,7 @@
 - These are further specifications on what a Linux Command should do
 - A command might be "go buy milk"
 - A command with an argument might be "go buy 2 gallons of milk"
+- Example: ```ls -a```
 
 #### What is WSL?
 - Windows Subsystem for Linux
@@ -106,6 +107,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=https%3A//
 #### Creating a Repository
 - For our demo today, please follow these steps:
     - Go to this repository: https://github.com/TarunGunampalli/GDSC-Bootcamp
+    - Quickly create a GitHub account if you don't have one
     - In the top right of the screen, click "Fork"
         - This creates a copy of the codebase that you now are the owner of (like making a copy in Google Drive)
     - Go to the forked repository that you now own and click the green button that says "Code". Copy the URL that is displayed
@@ -154,6 +156,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=https%3A//
 
 - ```git log```
     - This will print out your entire commit history
+    - Press q to exit
 
 <br>
 
