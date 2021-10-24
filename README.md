@@ -1,17 +1,28 @@
 # GDSC Developer Basics Bootcamp
 ## Command Line
-#### Basic Linux Commands
-- ```pwd```
-- ```ls```
-- ```cd```
-- ```ssh```
-- ```./```
-- ```clear```
-- ```touch```
-- ```mkdir```
-- ```rm```
-- ```vim```
-- ```cat```
+#### Basic Mac/Linux Commands
+- ```pwd``` (shows the path to the current directory)
+- ```ls```  (lists the files in the current directory)
+- ```cd <directory_name>``` (navigates to a specified subdirectory)
+- ```ssh``` (can be used to remotely connect to another machine's terminal)
+- ```clear``` (clears all previous terminal output)
+- ```touch <filename>``` (changes a file's timestamp)
+- ```mkdir <directory_name>``` (creates a new directory with a specified name)
+- ```rm <filename>``` (deletes a file or directory)
+- ```vim <filename>``` OR ```nano <filename>``` (opens a text editor for quick changes to a file)
+- ```cat <filename>``` (displays the contents of a file)
+
+#### Windows Equivalents
+- ```cd```  (shows the path to the current directory)
+- ```dir``` (lists the files in the current directory)
+- ```cd <directory_name>``` (navigates to a specified subdirectory)
+- ```(ssh is not available directly on Windows)```
+- ```cls``` (clears all previous terminal output)
+- ```type nul > <filename>```  (changes a file's timestamp)
+- ```mkdir <directory_name>``` (creates a new directory with a specified name)
+- ```del <filename>```    (deletes a file or directory)
+- ```micro <filename>```  (opens a text editor for quick changes to a file)
+- ```type <filename>```   (displays the contents of a file)
 
 #### Flags and arguments
 - These are further specifications on what a Linux Command should do
