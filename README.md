@@ -47,7 +47,7 @@ Code Editors vs IDEs
     - For example, Eclipse is an IDE for Java. It will come with a package manager for importing external Java classes, a debugger that can trace through your code and provide useful information on what's going on as your code runs, and Intellisense, a useful autocomplete feature that helps you write code faster.
 - Pros and Cons
     - VS Code may seem ineffecient, but with the use of extensions you can work in basically every feature that a full IDE like IntelliJ would give you. This includes Intellisense, a debugger, and many other useful features.
-    - VS Code is more versatile. IntelliJ is only for Java, and there's other IDEs for other languages, but VS Code can be used for any popular language today with community or professionally maintained extensions.
+    - VS Code is more versatile. An IDE is typically catered toward developing in particular languages and their corresponding frameworks, but VS Code can be used for any popular language today with community or professionally maintained extensions.
     - IDEs are often faster than VS Code because everything is natively built-in.
     - Good code editors like VS Code have features where you can pull up a terminal below your code window, making it easy to run your code with simple commands
 
@@ -80,11 +80,6 @@ Parts of VS Code
     - Commonly used commands automatically appear at the top
     - Start typing to search for specific commands
 
-Eclipse
-- Eclipse is an IDE, or Integrated Development Environment catered to Java developers. In a nutshell, IDEs share many characteristics with code editors, but go one step further and provides more comprehensive facilities to software developers, such as the ability to run your code with the click of a button, more powerful debugging capabilities, and live unit testing for those working a professional Software Engineering job.
-- For our purposes, we will simply demo how to use Eclipse. The installation and setup requires a bit of work as well as downloading a Java Runtime Environment and possibly also a Java Development Kit.
-- If you would like to try out Eclipse for yourself in your computer, you can follow the tutorials at this link: http://eclipsetutorial.sourceforge.net/
-
 <br>
 
 ## Git and GitHub
@@ -110,7 +105,7 @@ git --version
 - If you have a Mac and this is your first time extensively using your terminal, you might be prompted to install command line developer tools. If this is the case, click install and everything needed to use git should be taken care of automatically
 
 #### Creating a Repository
-- For our demo today we will work in pairs of 2. Please follow these steps:
+- For our hands-on at the end of the workshop we will work in pairs. Please follow these steps:
     - Make sure both partners create a GitHub account if one or both don't have one
     - Have ONE person go to this repository: https://github.com/TarunGunampalli/GDSC-Bootcamp
     - In the top right of the screen, click "Fork"
@@ -171,65 +166,3 @@ git --version
 - ```git status```
     - This will show you what files have been modified, deleted, created, etc. between commits
     - It will also show you what differs between your local code and the remote repository on GitHub
-
-<br>
-
-- ```git branch```
-    - This will create a new "branch" in your local directory
-    - A branch is essentially a copy of the codebase within the same directory and repository. Branching allows multiple collaborators to work on different copies of the files rather than all working on the same ones. Branches can be easily merged back into one "main" branch. As a whole, it minimizes the chances of "merge conflicts" when multiple people are editing the codebase. We will talk more about this in the live demo.
-    - ```git branch``` by itself will just list all your branches
-    - Run ```git branch -b <branch-name>``` to create a new branch and name it
-
-<br>
-
-- ```git checkout```
-    - This allows you to switch from one branch to another
-    - Must run ```git checkout <branch-name>``` to specify what branch to switch to
-    - As a shortcut, you can simply run ```git checkout -b <branch-name>``` to create a new branch and switch to it all at once
-
-<br>
-
-Pull Requests and Merging
-- After you are done working on a branch, you can create a pull request, in which a request will be made to merge the changes in that branch to the main branch. This process is done so that your collaborators can perform a "code review" and make sure all the changes look good before bringing them into the main code
-- In the industry, this is an important practice because the main branch is typically set up with automated testing and deployment configurations, so developers should NEVER push code changes directly to the main or risk breaking entire applications
-- More on this in the live demo
-
-<br>
-
-## Virtual Environments 
-
-#### What is a Virtual Environment?
--  A virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system
-
-#### Conda
-- There are multiple different ways to create and activate virtual environments, but today we will use Conda since it's very easy to manage
-
-#### Installing Conda
-- https://docs.conda.io/en/latest/miniconda.html
-- You don't have to do this right now if you don't want to since the installation can be a little tricky depending on your machine
-
-#### Creating and Activating a Virtual Environment
-- To create and activate a new virtual environment, run the following commands:
-```
-conda create -n <environment_name> python=3.8
-conda activate <environment_name>
-```
-
-#### Installing Packages in a Virtual Environment
-- Once a Conda Virtual Envrionment is active, it's name will show up in parentheses to the very left of the command prompt. In order to install dependencies in it, simply run the following:
-```
-pip install <package_name>
-```  
-- You can also install multiple packages at once by simply listing the names in a file called requirements.txt and running the following:
-```
-pip install -r requirements.txt
-```
-
-#### Deactivating Virtual Enviroments
-- To deactivate or exit out of a Virtual Environment, run the following:
-```
-conda deactivate <environment_name>
-```
-
-#### Summary of Virtual Environments
-- When working on a Python project, you should always use a Virtual Environment for your directory so that you can install specific dependencies only for projects that need them and not globally on your machine
